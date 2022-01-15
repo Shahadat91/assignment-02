@@ -1,3 +1,7 @@
+/*================
+common css
+=================== 
+ */
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +12,15 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+span{
+    color: #787885;
+}
+
+/*=====================
+nav bar css start here
+======================= 
+ */
 
 .nav-bar{
     background-color: #562EFF;
@@ -48,6 +61,10 @@ body{
     margin-top: 25px;
 }
 
+/*========================
+influencer css start here
+========================== 
+ */
 .influencer{
     display: flex;
     justify-content: space-around;
@@ -62,6 +79,10 @@ body{
     color: #000;
 }
 
+/*============================
+preebook button css start here
+============================== 
+ */
 .preebook-button{
     margin: 15px 0;
     display: inline-block;
@@ -76,10 +97,19 @@ body{
     margin-left: 10px;
 }
 
+/*========================
+main-camera css start here
+========================== 
+ */
+
 .main-camera-img{
     width: 100%;
 }
 
+/*============================
+e-commerce site css start here
+============================== 
+ */
 .e-commerce-site{
     display: flex;
     flex-wrap: wrap;
@@ -92,6 +122,10 @@ body{
     padding: 5px;
 }
 
+/*================================
+popular collection css start here
+================================== 
+ */
 .popular-collection-title{
     text-align: center;
     font-size: 30px;
@@ -101,7 +135,7 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
-    margin: 50px auto;
+    margin: 50px auto 20px auto;
     max-width: 1047px;
 }
 .popular-collection-iteams img{
@@ -109,25 +143,23 @@ body{
     width: 100%;
     height: auto;
 }
-.box-shadow{
+.popular-items{
     padding: 15px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
 }
 
-.box-shadow p{
+.popular-items p{
     color: #787885;
 }
 
-span{
-    color: #787885;
-}
 
-.box-shadow img{
+
+.popular-items img{
     margin-bottom: 20px;
 }
 
-.box-shadow h3{
+.popular-items h3{
     margin-bottom: 15px;
 }
 
@@ -136,9 +168,15 @@ span{
     margin: 15px 0;
 }
 
+/*============================
+see more button css start here
+============================== 
+ */
 .see-more{
     display: flex;
     justify-content: flex-end;
+    max-width: 1047px;
+    margin: 0 auto; 
     margin-bottom: 50px;
 }
 .see-more-button{
@@ -146,6 +184,10 @@ span{
     font-size: 20px; 
 }
 
+/*========================
+footer css start here
+========================== 
+ */
 .footer{
     height: 185px;
     width: auto;
@@ -179,6 +221,8 @@ span{
     color: white;
     padding-right: 10px;
 }
+
+
 
 /* =====================
 Resposive for Mobile
@@ -239,15 +283,25 @@ Resposive for Mobile
     
 }
 
+
 /* =====================
 Resposive for Tablet
 ======================== */
 
-@media only screen and (min-width:688px) and (max-width: 992px) {
-    .nav-bar{
-        background-color: red;
+@media only screen and (max-width: 992px) {
+    main{
+        padding: 0 20px;
     }
+    .e-commerce-site{
+        justify-content: center;
+    }
+    .e-commerce-site li{
+        padding: 10px 20px;
+    }
+}
 
+@media only screen and (min-width:688px) and (max-width: 992px) {
+    
     .nav-left h1{
         font-size: 18px;
         color: white;
@@ -279,5 +333,8 @@ Resposive for Tablet
         grid-gap: 30px;
         max-width: 750px;
         
+    }
+    .see-more{
+        max-width: 750px;
     }
 }
