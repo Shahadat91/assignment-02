@@ -23,7 +23,7 @@ nav bar css start here
  */
 
 .nav-bar{
-    background-color: #562EFF;
+    background-color: #03203C;
     width: auto;
     height: 75px;
     display: flex;
@@ -86,7 +86,9 @@ preebook button css start here
 .preebook-button{
     margin: 15px 0;
     display: inline-block;
-    background-color: violet;
+    font-size: 18px;
+    color: white;
+    background-color: #E03B8B;
     padding: 10px;
     border-radius: 10px;
     outline: none;
@@ -180,8 +182,24 @@ see more button css start here
     margin-bottom: 50px;
 }
 .see-more-button{
-    color: magenta;
-    font-size: 20px; 
+    background-color: #E03B8B;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px; 
+    border-radius: 10px;
+}
+
+.influencer-career{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.influencer-career p{
+    color: #000;
+    margin-left: 30px;
+    margin-top: 50px;
+    
 }
 
 /*========================
@@ -281,8 +299,19 @@ Resposive for Mobile
         
     }
     
-}
+    .influencer-career{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .influencer-career p{
+        margin-top: 15px;
+        
+    }
 
+}
 
 /* =====================
 Resposive for Tablet
@@ -297,6 +326,11 @@ Resposive for Tablet
     }
     .e-commerce-site li{
         padding: 10px 20px;
+    }
+
+    .influencer-career p{
+        margin-top: 50px;
+        
     }
 }
 
@@ -337,4 +371,12 @@ Resposive for Tablet
     .see-more{
         max-width: 750px;
     }
+
+    .influencer-career{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+   
 }
