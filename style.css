@@ -33,14 +33,14 @@ nav bar css start here
 
 .nav-left h1{
     color: white;
-    margin-top: 25px;
+    margin-top: 20px;
     letter-spacing: 2px;
 }
 
 .nav-right ul{
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 25px;
 
 }
 
@@ -189,6 +189,15 @@ see more button css start here
     border-radius: 10px;
 }
 
+/*==============================
+influencer career css start here
+================================ 
+ */
+
+.career-heading{
+    text-align: center;
+    font-size: 30px;
+}
 .influencer-career{
     display: flex;
     justify-content: space-around;
