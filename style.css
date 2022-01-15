@@ -6,7 +6,7 @@
 }
 
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .nav-bar{
@@ -21,6 +21,7 @@ body{
 .nav-left h1{
     color: white;
     margin-top: 25px;
+    letter-spacing: 2px;
 }
 
 .nav-right ul{
@@ -35,6 +36,18 @@ body{
     padding: 15px;
 }
 
+.hambarger-button {
+    display: none;
+    background: transparent;
+    font-size: 20px;
+    padding: 0;
+    outline: 0;
+    width: 24px;
+    height: 24px;
+    border: 0;
+    margin-top: 25px;
+}
+
 .influencer{
     display: flex;
     justify-content: space-around;
@@ -44,9 +57,11 @@ body{
 .influencer-left h1{
     font-size: 50px;
 }
-.h1-title{
-    font-size: 50px;
+
+.influencer-left p{
+    color: #000;
 }
+
 .preebook-button{
     margin: 15px 0;
     display: inline-block;
@@ -65,11 +80,16 @@ body{
     width: 100%;
 }
 
-.company-name{
+.e-commerce-site{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 100px;
     
+}
+
+.e-commerce-site li{
+    padding: 5px;
 }
 
 .popular-collection-title{
@@ -96,7 +116,24 @@ body{
 }
 
 .box-shadow p{
-    color: black;
+    color: #787885;
+}
+
+span{
+    color: #787885;
+}
+
+.box-shadow img{
+    margin-bottom: 20px;
+}
+
+.box-shadow h3{
+    margin-bottom: 15px;
+}
+
+.ratings i{
+    color: goldenrod;
+    margin: 15px 0;
 }
 
 .see-more{
@@ -110,7 +147,7 @@ body{
 }
 
 .footer{
-    height: 150px;
+    height: 185px;
     width: auto;
     background-color: #0A0826;
    
@@ -126,6 +163,7 @@ body{
 
 .footer-info h3{
     margin-bottom: 10px;
+    letter-spacing: 2px;
 }
 
 .footer-info h3, p{
@@ -140,4 +178,106 @@ body{
 .social-media-icon i{
     color: white;
     padding-right: 10px;
+}
+
+/* =====================
+Resposive for Mobile
+======================== */
+
+@media only screen and (max-width:688px) {
+    .hambarger-button {
+        display: inline-block;
+    }
+    .nav-bar{
+        background: #fff;
+        margin-bottom: 10px;
+    }
+    .nav-left h1 {
+        margin-top: 18px;
+    }
+    .nav-right ul {
+        margin-top: 25px;
+    }
+    .nav-bar ul li:not(.cart-item) {
+        display: none;
+    }
+    .nav-right ul li a ,
+    .nav-left h1 {
+        color: #3a3a3a;
+    }
+
+    .nav-right ul li a {
+        font-size: 20px;
+    }
+
+    .influencer{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .influencer-left{
+        order: 2;
+    }
+
+    .influencer-left h1{
+        font-size: 25px;
+    }
+
+    .e-commerce-site{
+       flex-direction: row;
+    }
+
+    .popular-collection-iteams{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        max-width: 550px;
+        
+    }
+    
+}
+
+/* =====================
+Resposive for Tablet
+======================== */
+
+@media only screen and (min-width:688px) and (max-width: 992px) {
+    .nav-bar{
+        background-color: red;
+    }
+
+    .nav-left h1{
+        font-size: 18px;
+        color: white;
+        margin-top: 22px;
+        letter-spacing: 2px;
+    }
+
+    .nav-right ul{
+        margin-top: 22px;
+    
+    }
+    
+    .nav-right ul li a{
+        padding: 10px;
+    }
+    
+    .influencer-left h1{
+        font-size: 30px;
+    }
+
+    .main-camera-img img{
+        width: 80%;
+        height: auto;
+    }
+
+    .popular-collection-iteams{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        max-width: 750px;
+        
+    }
 }
