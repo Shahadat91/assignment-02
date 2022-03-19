@@ -216,7 +216,8 @@ footer css start here
 .footer{
     height: 185px;
     width: auto;
-    background-color: #0A0826;
+    /* background-color: #0A0826; */
+    background-color: #0A0;
    
 }
 .footer-title{
